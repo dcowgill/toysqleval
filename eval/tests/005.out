@@ -1,0 +1,14 @@
+OK
+OK
+OK
+OK
+ bar              | qux | bar              | foo                       | ?        | baz      | ?  
+------------------+-----+------------------+---------------------------+----------+----------+-----
+ "hello, world"   | 42  | "hello, world"   | 2009-05-10T21:39:19-04:00 | -6.28318 | -3.14159 | 84 
+                  |     |                  | 1890-04-14T17:37:15-05:00 | 0.0002   | 0.0001   |    
+ "goodbye, world" | 99  | "goodbye, world" |                           |          |          | 198
+ ?                                           
+----------------------------------------------
+ "hello, worldhello, worldhello, world"      
+                                             
+ "goodbye, worldgoodbye, worldgoodbye, world"

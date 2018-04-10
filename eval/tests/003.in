@@ -1,0 +1,10 @@
+create table test (time timestamp);
+insert into test values ('1935-12-30 20:50:47 EST');
+insert into test values ('Sun May 10 21:39:19 -0400 2009');
+insert into test values ('1927-11-05T05:38:35.346211401-05:00');
+insert into test values ('Thu, 30 Jun 1960 21:24:07 -0400');
+insert into test values ('Fri Oct 24 12:49:33 EST 1924');
+insert into test values ('Fri, 19 Sep 1958 20:18:11 EDT');
+insert into test values ('1890-04-14T17:37:15-05:00');
+select * from test;
+select time||time from test;

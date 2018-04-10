@@ -1,0 +1,22 @@
+create table test (
+    n integer,
+    s varchar,
+    f number,
+    t timestamp,
+    b boolean
+);
+
+insert into test values (42, 'hello', 3.14, 'Sun May 10 21:39:19 -0400 2009', true);
+insert into test values (99, 'world', 0.05, 'Sat May 09 21:39:19 -0400 2009', false);
+insert into test values (17, 'blarg', 9.51, 'Mon May 11 21:39:19 -0400 2009', true);
+
+select n from test where s = 'blarg';
+select n from test where n > 17 and n != 42;
+select n from test where s = 'hello' or b = false;
+select n from test where t = '2009-05-09T21:39:19-04:00';
+select n from test where t = '2009-05-09T21:39:19-04:00' and s != 'world';
+
+update test set n = n*2, f = f+1, s = s||s
+ where s != 'world';
+
+select * from test;

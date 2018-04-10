@@ -1,0 +1,5 @@
+create table test (b boolean);
+insert into test values (true);
+insert into test values (false);
+insert into test values (true);
+select * from test;
