@@ -3,10 +3,12 @@ create table test (
     f number,
     s varchar
 );
+
 insert into test (f,s,n) values (1.1, 'hello', 11);
 insert into test (n,s,f) values (7, 'world', 2.2);
 insert into test (f) values (3.3);
 insert into test (n) values (13);
+
 select sum(f) from test;
 select sum(n) from test;
 select count(f), count(n), count(s), count(*) from test;

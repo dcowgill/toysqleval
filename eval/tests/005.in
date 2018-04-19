@@ -4,8 +4,10 @@ create table foo (
     qux integer,
     foo timestamp
 );
+
 insert into foo (qux, baz, bar, foo) values (42, -3.14159, 'hello, world', 'Sun May 10 21:39:19 -0400 2009');
 insert into foo (baz, foo) values (0.0001, '1890-04-14T17:37:15-05:00');
 insert into foo (qux, bar) values (99, 'goodbye, world');
+
 select bar, qux, bar, foo, baz/0.5, baz, qux*2 from foo;
 select bar||bar||bar from foo;

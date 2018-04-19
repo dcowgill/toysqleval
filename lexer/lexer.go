@@ -87,6 +87,9 @@ func (lex *Lexer) Scan() bool {
 	case '(':
 		return lex.consumeRune(token.LeftParen)
 	case '<':
+		if lex.matchString("<>", token.NotEqual) {
+			return true
+		}
 		if lex.matchString("<=", token.LessThanOrEqualTo) {
 			return true
 		}

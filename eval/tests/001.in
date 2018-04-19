@@ -1,8 +1,11 @@
 create table test (n integer, f number);
+
 insert into test values (1, 0.99999);
 insert into test values (2, 2.71828);
 insert into test values (3, 3.14159);
+
 select * from test;
 select n from test;
 select f from test;
+
 select n*f, f*n, f/n from test;

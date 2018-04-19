@@ -20,3 +20,8 @@ update test set n = n*2, f = f+1, s = s||s
  where s != 'world';
 
 select * from test;
+
+update test set n = n/2
+ where s <> 'world';
+
+select * from test;
